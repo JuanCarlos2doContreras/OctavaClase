@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Astro v5.13.2">
+    <title>Mi portafolio con bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="theme-color" content="#712cf9">
+    <style>
+       
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: #0000001a;
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500
+        }
+
+        .bd-mode-toggle .bi {
+            width: 1em;
+            height: 1em
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important
+        }
+    </style>
+</head>
+
+<body> 
+    <header data-bs-theme="dark">
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>About</h4>
+                        <p class="text-body-secondary">Este es un album de nuestros portafolios utilizando bootstrap</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on X</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="mailto:jcontreraa@uc.cl" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container"> <a href="#" class="navbar-brand d-flex align-items-center"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+                        viewBox="0 0 24 24">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg> <strong>Album</strong> </a> <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button> </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Portafolio hecho con bootstrap</h1>
+                    <p class="lead text-body-secondary">Portafolio de proyectos hechos por Juan Contreras y Felipe Barria</p>
+                    <p> <a href="#" class="btn btn-primary my-2">Main call to action</a> <a href="#"
+                            class="btn btn-secondary my-2">Secondary action</a> </p>
+                </div>
+            </div>
+        </section>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="gary">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1"> <a href="#">Back to top</a> </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/5.3/getting-started/introduction">getting started guide</a>.</p>
+        </div>
+    </footer>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        class="astro-vvvwv3sm"></script>
+        <script>
+            const trabajos = [
+	{
+          title:"Lapsi",
+          category: "Taller Producto",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/lapsi.png?raw=true",
+          description:"Asiento plegable para niños en transporte publico<br><br>Juan Contreras"
+        },
+        {
+        title:"Blitz cookies",
+          category: "Taller Mercado",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/blitz.png?raw=true",
+          description:"Galletas para jugar ajedrez<br><br>Juan Contreras"
+        },
+        {
+          title:"Lampara Flor",
+          category: "Estructuras y materiales",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/lamp.png?raw=true",
+          description:"Lampara con petalos plegables<br><br>Juan Contreras"
+        },
+        {
+          title:"Agarradera de madera",
+          category: "Modelos y prototipos",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/handle.png?raw=true",
+          description:"Escultura de madera para abrir puertas sin tener contacto directo<br><br>Juan Contreras"
+        },
+        {
+          title:"Trofeo de la Tirana",
+          category: "Estructuras y materiales",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/trofeo.png?raw=true",
+          description:"Trofeo del festival La Tirana Musical<br><br>Felipe Barría"
+        },        
+        {
+          title:"Cafetera Giralt",
+          category: "Taller producto",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/coffee.png?raw=true",
+          description:"Render de la Cafetera Giralt marca Roig<br><br>Felipe Barría"
+        },
+        {
+          title:"DELUZIO",
+          category: "Taller producto",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/kiosko.png?raw=true",
+          description:"Kiosko de providencia<br><br>Felipe Barría"
+        },
+        {
+          title:"Banco apilable",
+          category: "Estructura y materiales",
+          photo:"https://github.com/JuanCarlos2doContreras/Evaluacion2/blob/main/img/silla.png?raw=true",
+          description:"Banco que puede aguantar hasta 100kg<br><br>Felipe Barría"
+        },
+]
+
+ const parrafos = document.querySelector("#gary");
+        trabajos.forEach((v) => {
+          parrafos.innerHTML +=
+           `<div class="col"><div class="card shadow-sm"> <img src="${v.photo}" alt="${v.category}" height="225"
+                                preserveAspectRatio="xMidYMid slice"  width="100%">
+                            <div class="card-body">
+                                <h1>${v.title}</h1>
+                                <p class="card-text">${v.description}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary">View</button> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small
+                                        class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        </div>`;
+        });
+        </script>
+</body>
+
+</html>
